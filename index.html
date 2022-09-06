@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomoto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="NavBar">
+    <nav>
+    <ul>   
+    <li><a class="a"  href="">Get the App</a></li>
+    <li><a class="a"  href="">Investor Relations</a></li>
+    <li><a class="a"  href="">Add Restaurant</a></li>
+    <li><a class="a"  onclick="openForm1()">Login</a></li>
+    <li><a class="a"  onclick="openForm2()">Sign up</a></li>
+    </ul>
+    </nav>
+
+
+<!-- ----------Popup Login form----------------- -->
+    
+  <div class="overlay" id="overlay" onclick="closeForm1()"> </div>
+    <div class="form-popup" id="myForm">    
+        <form action="" class="form-container">
+
+          <div class="container-top">
+            
+            <h2 class="log">Login<i class="fa fa-close" id="close" onclick="closeForm1()"></i></h2>
+            </div>
+
+          <div class="mobilenumber">
+             <div class="vrline"></div>
+             <img  class="ind-flag"  src="images/197419.png" alt="india">
+              <p class="code">+ 91</p>
+            <input class="iptext" type="number" placeholder="Phone" name="mobilenumber" required >
+          </div>
+
+          
+
+          <div class="otp">
+            <button type="submit" class="btn" id="first-btn">Send One Time Password</button>
+          </div>
+          
+           <p class="or">or</p>
+          <button type="submit" class="btn" id="second-btn"><i class="fa fa-envelope" id="icon"></i> Continue with Email</button><br><br>
+          <button type="submit" class="btn" id="third-btn"><i class="fa fa-google" id="icon1"></i>  Continue with Google</button>
+
+          <br><br>
+          <hr>
+          <p class="text">New to Zomato?<a class="createAcc" href="">Create account</a></p>
+        </form>
+      </div>
+  
+        
+
+
+
+
+
+    <!-- -----------------------------Sign-Up---------------------------- -->
+
+   <div class="overlay-signup" id="overlay" onclick="closeForm2()"></div>
+
+   <div class="popup-signup">
+
+    <form action="" class="signup-form"  id="Form">
+
+        <div class="heading">
+        <h1 class="sign">Sign up<i class="fa fa-close" id="close1" onclick="closeForm2()"></i></h1>
+       </div>   
+
+       <br>
+
+       <div class="input">
+        <input type="text" placeholder="Full Name"><br><br>
+        <input type="email" placeholder="Email"><br><br>    
+        </div>
+
+        <div class="check">
+        <input type="checkbox" id="box" name="condition">
+<label  class="condition"  for="condition">I agree to Zomato's <span><a href="">Terms of Service,</a><a href="">Privacy Policy and</a><br> 
+            <a  class="Content" href="">Content Policies</a></span> </label><br>
+       </div>
+
+
+        <div class="button">
+        <button class="btn-1">Create account</button> 
+         <p class="sign-or">or</p> 
+        <button class="btn-2"><i class="fa fa-google" id="google"></i> Continue with Google</button>
+    </div>
+
+         <p class="page-end">Already have an account?<a href="">Log in</a></p>
+    </form>
+
+</div>
+
+
+
+  
+</body>
+</html>
